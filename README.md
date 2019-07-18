@@ -24,9 +24,12 @@ Above command will start the Hangman API server on port 9000
  - Execute the following
 
 ```
+cd dist
 python ui.py
 ```
 
 **within the same Virtual environment as py-hangman**
 
-Above command will start the Hangman UI game server on port 3000
+Above command will start the Hangman UI game server on port 3000.
+
+Open your browser and hit http://localhost:3000
