@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-TOTAL_CHANCES = 8
+TOTAL_CHANCES = 6
 
 # Make your changes in the function below
 def check(word, guesses, guess):
@@ -27,7 +27,7 @@ def check(word, guesses, guess):
     The function should return the following
 
     - masked_word: the word that has been guessed till now.
-          The letters not yet guessed should be `_`
+          The letters not yet guessed should be `-`
     - chances_left: number of chances left after this
     - game_won: Boolean value that represents if the game is won
     - game_lost: Boolean value that represents if the game is lost
@@ -43,7 +43,7 @@ def check(word, guesses, guess):
       - False
       - False
     """
-    return "_____", 5, True, False
+    return "-" * len(word), TOTAL_CHANCES, False, False
 
 
 @app.route('/check', methods=['POST'])
