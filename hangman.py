@@ -21,13 +21,13 @@ def check(word, guesses, guess):
     """The function accepts following arguments
 
     - word: the word to be guessed
-    - guesses: list of characters already guessed
-    - guess: the current character guessed
+    - guesses: list of characters (as strings) already guessed
+    - guess: the current character (as strings) guessed
 
     The function should return the following
 
     - masked_word: the word that has been guessed till now.
-          The characters not guessed should be `_`
+          The letters not yet guessed should be `_`
     - chances_left: number of chances left after this
     - game_won: Boolean value that represents if the game is won
     - game_lost: Boolean value that represents if the game is lost
